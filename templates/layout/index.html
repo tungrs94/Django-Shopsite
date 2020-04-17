@@ -1,0 +1,37 @@
+{% extends 'homepage/base.html' %}
+{% load static %}
+
+{% block layoutcss %}
+	<link rel="stylesheet" type="text/css" href="{% static 'homepage/styles/main_styles.css' %}">
+{% endblock %}
+
+	<!-- Header -->
+
+{% block content %}
+
+	<!-- Banner -->
+	{% include 'homepage/banner.html' %}
+	<!-- Characteristics -->
+	{% include 'homepage/charac.html' %}
+	<!-- Deals of the week -->
+	{% include 'homepage/dealoftheweek.html' %}
+	<!-- Popular Categories -->
+	{% include 'homepage/popularcategories.html' %}
+	<!-- Banner2 -->
+	{% include 'homepage/banner2.html' %}
+	<!-- Hot New Arrivals -->
+	{% include 'homepage/hotnew.html' %}
+	<!-- Trends -->
+	{% include 'homepage/trends.html' %}
+	<!-- Reviews -->
+	{% include 'homepage/review.html' %}
+	<!-- Recently Viewed -->
+	{% include 'homepage/viewed.html' %}
+	<!-- Brands -->
+	{% include 'homepage/brands.html' %}
+	<!-- Newsletter -->
+
+{% endblock %}
+
+	<!-- Footer -->
+
